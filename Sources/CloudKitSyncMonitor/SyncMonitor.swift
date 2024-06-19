@@ -183,21 +183,21 @@ public class SyncMonitor: ObservableObject {
         public var description: String {
             switch self {
             case .noNetwork:
-                return String(localized: "No network available")
+                return String("No network available")
             case .accountNotAvailable:
-                return String(localized: "No iCloud account")
+                return String("No iCloud account")
             case .error:
-                return String(localized: "Error")
+                return String("Error")
             case .notSyncing:
-                return String(localized: "Not syncing to iCloud")
+                return String("Not syncing to iCloud")
             case .notStarted:
-                return String(localized: "Sync not started")
+                return String("Sync not started")
             case .inProgress:
-                return String(localized: "Syncing...")
+                return String("Syncing...")
             case .succeeded:
-                return String(localized: "Synced with iCloud")
+                return String("Synced with iCloud")
             case .unknown:
-                return String(localized: "Error")
+                return String("Error")
             }
         }
 
